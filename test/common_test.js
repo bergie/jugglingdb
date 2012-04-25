@@ -180,6 +180,7 @@ function testOrm(schema) {
 
         Post.create({
             title: title,
+            content: undefined,
             date: date
         }, function (err, obj) {
             test.ok(obj.id, 'Object id should present');
